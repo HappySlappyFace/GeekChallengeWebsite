@@ -1,0 +1,105 @@
+/* css reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* colors */
+
+:root{
+    --primary-orange: #e0321b;
+    --primary-grey: #181615;
+}
+
+/* body */
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+}
+
+/* navbar */
+
+header{
+    width: 100%;
+    background-color: var(--primary-grey);
+    position: sticky;
+    top:0;
+    border-bottom: solid 1px #020202;
+}
+.navbar{
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar1 img{
+    height: 2rem;
+    display: block;
+}
+#navbar1{
+    flex-shrink: 0;
+    padding-right: 1rem;
+}
+#navbar2{
+    display: flex;
+    gap: 2rem;
+}
+#navbar2 a{
+    color: white;
+    text-decoration: none;
+}
+
+/* content */
+button{
+    border: none;
+    background-color: var(--primary-orange);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+img{display: block;}
+.section2{
+    background-color: var(--primary-orange);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.section2Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: black;
+    border-radius: 0.25rem;
+}
+.section2Text{
+    font-size: 14px;
+}
+.section2Button{
+    margin-left: 2rem;
+}
