@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "cocogoose";
+    src: url("/fonts/Cocogoose.ttf");
+    font-weight: 700;
+  }
+@font-face {
+    font-family: "cocogoose";
+    src: url("/fonts/CocogooseLight.ttf");
+    font-weight: 300;
+  }
+@font-face {
+    font-family: "cocogoose";
+    src: url("/fonts/CocogooseThin.ttf");
+    font-weight: 100;
+  }
+
 /* css reset */
 html {
     box-sizing: border-box;
@@ -11,8 +27,9 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
-    font-weight: normal;
-    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-family: 'cocogoose', sans-serif;
+                                                
 }
   
 ol, ul {
@@ -28,7 +45,7 @@ img {
 
 :root{
     --primary-orange: #e0321b;
-    --primary-grey: #181615;
+    --primary-grey: #131211;
 }
 
 /* body */
@@ -47,11 +64,15 @@ header{
     background-color: var(--primary-grey);
     position: sticky;
     top:0;
-    border-bottom: solid 1px #020202;
+    /* border-bottom: solid 1px #020202; */
     z-index: 5;
 }
+.headerItem{
+    color: var(--primary-orange);
+    font-size: 0.75rem;
+}
 .navbar{
-    padding: 0.5rem 1rem;
+    padding: 3rem 2rem 0.5rem 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -64,6 +85,7 @@ header{
 #navbar1{
     flex-shrink: 0;
     padding-right: 1rem;
+    padding-left: 1rem;
 }
 #navbar2{
     display: flex;
@@ -82,24 +104,24 @@ button{
     border-radius: 0.25rem;
 }
 img{display: block;}
-.sections{
-    border-bottom: solid 1px #020202;
+.textWithNumber{
+    font-family: poppins;
+    font-weight: 900;
+}
+#geekLogoSection1{
+    width: 15rem;
 }
 .section2{
-    background-color: var(--primary-orange);
+    background-color: var(--primary-grey);
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 8rem;
 }
-.section2Container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem 3rem;
-    background-color: black;
-    border-radius: 0.25rem;
+.section2 h4{
+    color: var(--primary-orange);
 }
 .section2Text{
     font-size: 14px;
@@ -107,7 +129,9 @@ img{display: block;}
 .section2Button{
     margin-left: 2rem;
 }
-
+.imgRotate{
+    transform: rotate(180deg);
+}
 .section3{
     color: white;
     background-color: var(--primary-grey);
