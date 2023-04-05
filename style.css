@@ -48,6 +48,7 @@ header{
     position: sticky;
     top:0;
     border-bottom: solid 1px #020202;
+    z-index: 5;
 }
 .navbar{
     padding: 0.5rem 1rem;
@@ -81,6 +82,9 @@ button{
     border-radius: 0.25rem;
 }
 img{display: block;}
+.sections{
+    border-bottom: solid 1px #020202;
+}
 .section2{
     background-color: var(--primary-orange);
     color: white;
@@ -103,3 +107,102 @@ img{display: block;}
 .section2Button{
     margin-left: 2rem;
 }
+
+.section3{
+    color: white;
+    background-color: var(--primary-grey);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+.section3Images{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap:3rem;
+}
+.section3Img{
+    width: 13rem;
+    background-color: white;
+    border: solid 0.25rem var(--primary-orange);
+    border-radius: 1rem;
+    
+}
+.section3ImagesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section3ImagesContainer>h4{
+    padding-top: 1rem;
+}
+.section4{
+    background-color: var(--primary-grey);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    color: white;
+    background-color: #1f1f1f;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    padding: 17px;
+}
+
+
+
+.section4 {
+    height: 75vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    z-index: -3;
+  }
+  .section-slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: width: 100vw; */
+    height: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */ 
+    object-fit: cover;
+    z-index:-1;
+    filter: brightness(50%); /* 0% black, 100% original image, values > 100% are allowed for brighter than original image. */
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+  }
+  .section4-slideshow img:first-child {
+    display: block;
+    opacity: 1;
+  }
+  .section4{
+    padding: 2rem 2.5rem;
+  }
+  .section4 h1 {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+  }
+  .section4 p {
+    font-size: 1.75rem;
+  }
+  
+  @media (max-width: 700px) {
+    html { font-size: 12px; }
+    .section4-header { padding: 1.5rem 2rem; }
+    .section4 h1 { font-size: 2.5rem; }
+    .section4 p { font-size: 1.25rem; }
+  }

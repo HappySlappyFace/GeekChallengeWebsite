@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,500&display=swap"
         rel="stylesheet">
+    <script src="script-slideshow.js" defer></script>
 </head>
 
 <body>
@@ -19,17 +20,17 @@
             <li id="navbar1"><a href="#"><img src="img/logo_MTC.png" alt=""></a></li>
             <div id="navbar2">
                 <li>
-                    <a href="">
+                    <a href="./index.html">
                         <h3 class="headerItem">Geek Challenge</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./register.html">
                         <h3 class="headerItem">Register</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./contact.html">
                         <h3 class="headerItem">Contact</h3>
                     </a>
                 </li>
@@ -37,8 +38,8 @@
         </ul>
     </header>
     <div class="content">
-        <div class="section1"><img src="img/topBanner.png" alt=""></div>
-        <div class="section2">
+        <div class="sections section1"><img src="img/topBanner.png" alt=""></div>
+        <div class="sections section2" id="section2">
             <div class="section2Container">
                 <div class="section2Text">
                     <h2>Join us for the ultimate 24-hour geek-out at the upcoming "Geek Challenge" event, held at FSEGS.
@@ -49,10 +50,43 @@
                 <button class="section2Button">Register now</button>
             </div>
         </div>
-        <div class="section3">sponsors</div>
-        <div class="section4">earlier versions of geek challenge</div>
+        <div class="sections section3" id="section3">
+            <h2>Our Dear Sponsors</h2>
+            <div class="section3Images">
+                <div class="section3ImagesContainer">
+                    <img class="section3Img" src="./img/sponsors/asm.png" alt="">
+                    <h4>ASM</h4>
+                </div>
+                <div class="section3ImagesContainer">
+                    <img class="section3Img" src="./img/sponsors/chilli.png" alt="">
+                    <h4>Chilli</h4>
+                </div>
+                <div class="section3ImagesContainer">
+                    <img class="section3Img" src="./img/sponsors/pepper.png" alt="">
+                    <h4>Pepper</h4>
+                </div>
+                <div class="section3ImagesContainer">
+                    <img class="section3Img" src="./img/sponsors/saffron.png" alt="">
+                    <h4>Saffron</h4>
+                </div>
+            </div>
+        </div>
+        <div class="sections section4" id="section4">
+            <h2>Earlier versions of geek challenge</h2>
+            <div class="section-slideshow">
+                <img src="img/slideshow/1.jpg" alt="">
+                <img src="img/slideshow/2.jpg" alt="">
+                <img src="img/slideshow/3.jpg" alt="">
+                <img src="img/slideshow/4.jpg" alt="">
+                <img src="img/slideshow/5.jpg" alt="">
+                <img src="img/slideshow/6.jpg" alt="">
+                <img src="img/slideshow/7.jpg" alt="">
+                <img src="img/slideshow/8.jpg" alt="">
+                <img src="img/slideshow/9.jpg" alt="">
+            </div>
+        </div>
     </div>
-    <footer>mtc fsegs</footer>
+    <footer>Geek Challenge brought to life by MTC FSEGS</footer>
 </body>
 
 </html>
