@@ -20,6 +20,7 @@ label{
 }
 input{
     background-color: transparent;
+    color-scheme: dark;
     color: White;
     border: none;
     /* box-shadow: none; */
