@@ -1,0 +1,60 @@
+.registerContent{
+    width: 100%;
+    padding: 2rem;
+    flex: 1;
+}
+html,body{
+    height: 100%;
+}
+select{
+    display: inline;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+label{
+    display: inline;
+    width: fit-content;
+}
+input{
+    background-color: transparent;
+    /* color: red; */
+    border: none;
+    /* box-shadow: none; */
+    /* shape-outside: none; */
+    outline: none;
+    border-bottom: 1px solid var(--primary-orange);
+    width: 30%;
+    -webkit-appearance: none;
+}
+input::placeholder{
+    color: var(--primary-orange);
+    font-weight: 100;
+    font-family: "cocogoose";
+}
+input::content{
+    color: red;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    transition: background-color 500000s ease-in-out 0s;
+}
+
+#registerForm{
+    /* z-index: 6; */
+    display: grid;
+    /* grid-template-rows: repeat(6, 2rem [col-start]); */
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr;
+}
