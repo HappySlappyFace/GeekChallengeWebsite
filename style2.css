@@ -12,6 +12,7 @@ select{
     background-color: transparent;
     border: none;
     color: white;
+    outline: none;
 }
 label{
     display: inline;
@@ -19,7 +20,7 @@ label{
 }
 input{
     background-color: transparent;
-    /* color: red; */
+    color: White;
     border: none;
     /* box-shadow: none; */
     /* shape-outside: none; */
@@ -28,6 +29,7 @@ input{
     width: 30%;
     -webkit-appearance: none;
 }
+
 input::placeholder{
     color: var(--primary-orange);
     font-weight: 100;
@@ -36,7 +38,7 @@ input::placeholder{
 input::content{
     color: red;
 }
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
@@ -49,7 +51,7 @@ select:-webkit-autofill:focus {
     background-color: transparent;
     outline: none;
     transition: background-color 500000s ease-in-out 0s;
-}
+} */
 
 #registerForm{
     /* z-index: 6; */
@@ -57,4 +59,8 @@ select:-webkit-autofill:focus {
     /* grid-template-rows: repeat(6, 2rem [col-start]); */
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
     grid-template-columns: 1fr;
+}
+#fSubmitButton{
+    color: white;
+    background-color: var(--primary-orange);
 }
