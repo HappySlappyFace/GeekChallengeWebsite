@@ -28,7 +28,7 @@ img {
 
 :root{
     --primary-orange: #e0321b;
-    --primary-grey: #181615;
+    --primary-grey: #131211;
 }
 
 /* body */
@@ -38,6 +38,7 @@ body{
     flex-direction: column;
     align-items: center;
     /* flex-wrap: nowrap; */
+    background-color: var(--primary-grey);
 }
 
 /* navbar */
@@ -47,11 +48,15 @@ header{
     background-color: var(--primary-grey);
     position: sticky;
     top:0;
-    border-bottom: solid 1px #020202;
+    /* border-bottom: solid 1px #020202; */
     z-index: 5;
 }
+.headerItem{
+    color: var(--primary-orange);
+    font-size: 0.75rem;
+}
 .navbar{
-    padding: 0.5rem 1rem;
+    padding: 3rem 2rem 0.5rem 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -64,6 +69,7 @@ header{
 #navbar1{
     flex-shrink: 0;
     padding-right: 1rem;
+    padding-left: 1rem;
 }
 #navbar2{
     display: flex;
@@ -82,12 +88,25 @@ button{
     border-radius: 0.25rem;
 }
 img{display: block;}
-.sections{
+/* .sections{
     border-bottom: solid 1px #020202;
+} */
+.backgroundImg{
+    background-image: url("img2/section1.png");
+    width: 100%;
+    aspect-ratio: 1.77;
+    background-size: cover;
+}
+.section1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 .section2{
-    background-color: var(--primary-orange);
-    color: white;
+
+    transform: rotate(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,8 +117,8 @@ img{display: block;}
     justify-content: center;
     align-items: center;
     padding: 1.5rem 3rem;
-    background-color: black;
     border-radius: 0.25rem;
+    transform: rotate(180deg);
 }
 .section2Text{
     font-size: 14px;
