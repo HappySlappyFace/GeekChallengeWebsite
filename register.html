@@ -14,52 +14,54 @@
         rel="stylesheet">
     <!-- <script src="script-slideshow.js" defer></script> -->
     <script src="register.js" defer></script>
+    <script src="menu.js" defer></script>
 </head>
 
 <body>
     <header>
-        <ul class="navbar">
-            <li id="navbar1"><a href="#"><img src="img/logo_MTC.png" alt=""></a></li>
-            <div id="navbar2">
-                <li>
-                    <a href="./index.html">
-                        <h3 class="headerItem">Home</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html#section2">
-                        <h3 class="headerItem">About The Event</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html#section5">
-                        <h3 class="headerItem">Planning</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html#section3">
-                        <h3 class="headerItem">Our Sponsors</h3>
-                    </a>
-                </li>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="https://www.facebook.com/MTCFSEGS">
+                    <img src="img/logo_MTC.png" alt="">
+                </a>
             </div>
-            <li id="navbar1"><a href="#"><img src="img2/geek logo orange.png" alt=""></a></li>
-        </ul>
+            <div class="navbar-section">
+                <button class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-links">
+                    <ul class="navbar-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#section2">About The Event</a></li>
+                        <li><a href="./index.html#section5">Planning</a></li>
+                        <li><a href="./index.html#section3">Our Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-brand">
+                <a href="#">
+                    <img src="img2/geek logo orange.png" alt="">
+                </a>
+            </div>
+        </nav>
     </header>
+
     <div class="registerContent backgroundImg">
-        <form action="" id="registerForm">
+        <form action="" id="registerForm" netlify>
             <input type="text" name="fName" placeholder="Name">
             <input type="text" name="fLastName" placeholder="Last Name">
             <input type="text" name="fEmail" placeholder="Email">
             <input type="text" name="fNumber" placeholder="Phone Number">
             <input type="text" name="fTeamName" placeholder="Team Name">
-
+            <input type="text" name="fUniName" placeholder="Your University/Highscool">
             <label for="fTeamCount">Team Members</label><select name="fTeamCount" id="">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-                <option value="4">4</option>
             </select>
-            <input type="submit" value="submit" id="fSubmitButton">
+            <input type="submit" value="Register!" id="fSubmitButton">
         </form>
     </div>
     <footer>
@@ -91,7 +93,7 @@
                 </ul>
 
                 <div class="footerLogos">
-                    <a href="#"><img src="img/logo_MTC.png" alt=""></a>
+                    <a href="https://www.facebook.com/MTCFSEGS"><img src="img/logo_MTC.png" alt=""></a>
                     <a href="#"><img src="img2/geek logo white.png" alt=""></a>
                 </div>
 

@@ -11,7 +11,7 @@ select{
     width: fit-content;
     background-color: transparent;
     border: none;
-    color: white;
+    color: var(--primary-orange);
     outline: none;
 }
 label{
@@ -63,4 +63,14 @@ select:-webkit-autofill:focus {
 #fSubmitButton{
     color: white;
     background-color: var(--primary-orange);
+}
+@media screen and (max-width: 768px) {
+    input{
+        width: 100%;
+        font-size: 2rem;
+    }
+    select,label{
+        font-size: 2rem;
+    }
+
 }

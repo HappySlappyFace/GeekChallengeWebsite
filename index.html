@@ -12,37 +12,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,500&display=swap"
         rel="stylesheet">
     <script src="script-slideshow.js" defer></script>
+    <script src="menu.js" defer></script>
 </head>
 
 <body>
     <header>
-        <ul class="navbar">
-            <li id="navbar1"><a href="#"><img src="img/logo_MTC.png" alt=""></a></li>
-            <div id="navbar2">
-                <li>
-                    <a href="#section1">
-                        <h3 class="headerItem">Home</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#section2">
-                        <h3 class="headerItem">About The Event</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#section3">
-                        <h3 class="headerItem">Our Sponsors</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#section5">
-                        <h3 class="headerItem">Planning</h3>
-                    </a>
-                </li>
-
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="https://www.facebook.com/MTCFSEGS">
+                    <img src="img/logo_MTC.png" alt="">
+                </a>
             </div>
-            <li id="navbar1"><a href="#"><img src="img2/geek logo orange.png" alt=""></a></li>
-        </ul>
+            <div class="navbar-section">
+                <button class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-links">
+                    <ul class="navbar-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#section2">About The Event</a></li>
+                        <li><a href="./index.html#section5">Planning</a></li>
+                        <!-- <li><a href="./index.html#section3">Our Sponsors</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-brand">
+                <a href="#">
+                    <img src="img2/geek logo orange.png" alt="">
+                </a>
+            </div>
+        </nav>
     </header>
     <div class="content">
 
@@ -59,10 +60,13 @@
 
                 <div class="section2Text">
                     <h2>About The Event</h2>
-                    <h3>Join us for the ultimate 24-hour geek-out at the upcoming "Geek Challenge" event, held at FSEGS.
-                        With only a limited number of spots available, register now for just 25TND and get ready for a
-                        night
-                        of problem-solving and partying!</h3>
+                    <h3>Geek Challenge is an event that will take place on April 29-30 at FSEGS. It is a 24-hour
+                        development competition for teams of up to three students, offering
+                        a unique opportunity to test their skills and learn from experienced instructors. Beyond coding,
+                        students can also gain valuable marketing, organization, and project management skills. Through
+                        collaboration, they can explore new technologies and develop innovative solutions to real-world
+                        problems. It's an excellent chance to develop critical skills needed tomake their mark in the
+                        tech world.</h3>
                 </div>
                 <a href="register.html" class="registerButton">
                     <div>Register now</div>
@@ -75,17 +79,24 @@
             <div class="section-slideshow">
                 <img src="img/slideshow/1.jpg" alt="">
                 <img src="img/slideshow/2.jpg" alt="">
-                <img src="img/slideshow/3.jpg" alt="">
+                <img src="img/slideshow/10.jpg" alt="">
+                <img src="img/slideshow/14.jpg" alt="">
                 <img src="img/slideshow/4.jpg" alt="">
                 <img src="img/slideshow/5.jpg" alt="">
-                <img src="img/slideshow/6.jpg" alt="">
+                <img src="img/slideshow/13.jpg" alt="">
                 <img src="img/slideshow/7.jpg" alt="">
                 <img src="img/slideshow/8.jpg" alt="">
                 <img src="img/slideshow/9.jpg" alt="">
+                <img src="img/slideshow/16.jpg" alt="">
+                <img src="img/slideshow/3.jpg" alt="">
+                <img src="img/slideshow/11.jpg" alt="">
+                <img src="img/slideshow/12.jpg" alt="">
+
+                <img src="img/slideshow/15.jpg" alt="">
             </div>
         </div>
 
-        <div class="sections section3" id="section3">
+        <!-- <div class="sections section3" id="section3">
             <h2>Our Dear Sponsors</h2>
             <div class="section3Images">
                 <div class="section3ImagesContainer">
@@ -105,17 +116,34 @@
                     <h4>Saffron</h4>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="section5 backgroundImg" id="section5">
             <div class="section5Container">
                 <h2>Planning</h2>
                 <div class="section5Planning">
-                    <h3 id="section5Container1">
-                        <pre>
+                    <div id="section5Container1" class="section5PlanItem">
+                        <h3 class="planningText"><span class="orangeText">Check in</span> 15:00</h3>
+                        <h3 class="planningText"><span class="orangeText">The Opening ceremony and theme‘s
+                                announcement</span> 15:30 - 17:00</h3>
+                        <h3 class="planningText"><span class="orangeText">Coffee break</span> 17:00</h3>
+                        <h3 class="planningText"><span class="orangeText">The trainings</span> 17:30</h3>
+                        <h3 class="planningText"><span class="orangeText">Coffee break</span> 19:00</h3>
+                        <h3 class="planningText"><span class="orangeText">The beginning of the challenge</span> 19:30
+                        </h3>
+                        <h3 class="planningText"><span class="orangeText">Brainstorming session</span> 19:30 - 20:30
+                        </h3>
+                        <h3 class="planningText"><span class="orangeText">Dinner</span> 21:00</h3>
+                    </div>
+                    <div id="section5Container2" class="section5PlanItem">
+                        <h3 class="planningText"><span class="orangeText">Music break</span> 00:30-1:30</h3>
+                        <h3 class="planningText"><span class="orangeText">Coffee break</span> 4:00</h3>
+                        <h3 class="planningText"><span class="orangeText">Breakfast</span> 8:00</h3>
+                        <h3 class="planningText"><span class="orangeText">The end of the challenge</span> 11:30</h3>
+                        <h3 class="planningText"><span class="orangeText">The presentations</span> 11:30 - 14:30</h3>
+                        <h3 class="planningText"><span class="orangeText">Lunch</span> 14:30</h3>
+                        <h3 class="planningText"><span class="orangeText">Announcing the winners</span> 15:00</h3>
 
-</pre>
-                    </h3>
-                    <h3 id="section5Container2"></h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,11 +163,11 @@
                             <h3 class="footerItem">About The Event</h3>
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#section3">
                             <h3 class="footerItem">Our Sponsors</h3>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#section5">
                             <h3 class="footerItem">Planning</h3>
@@ -149,7 +177,7 @@
                 </ul>
 
                 <div class="footerLogos">
-                    <a href="#"><img src="img/logo_MTC.png" alt=""></a>
+                    <a href="https://www.facebook.com/MTCFSEGS"><img src="img/logo_MTC.png" alt=""></a>
                     <a href="#"><img src="img2/geek logo white.png" alt=""></a>
                 </div>
 

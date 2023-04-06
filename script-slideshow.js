@@ -1,6 +1,6 @@
 const slideshowImages = document.querySelectorAll(".section-slideshow img");
 
-const nextImageDelay = 5000;
+const nextImageDelay = 2500;
 let currentImageCounter = 0; // setting a variable to keep track of the current image (slide)
 
 // slideshowImages[currentImageCounter].style.display = "block";
