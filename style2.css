@@ -2,6 +2,9 @@
     width: 100%;
     padding: 2rem;
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 html,body{
     height: 100%;
@@ -13,10 +16,12 @@ select{
     border: none;
     color: var(--primary-orange);
     outline: none;
+    font-size: 1.3rem;
 }
-label{
+label,label h3{
     display: inline;
     width: fit-content;
+    font-size: 1.3rem;
 }
 input{
     background-color: transparent;
@@ -27,7 +32,8 @@ input{
     /* shape-outside: none; */
     outline: none;
     border-bottom: 1px solid var(--primary-orange);
-    width: 30%;
+    width: 100%;
+    font-size: 1.3rem;
     -webkit-appearance: none;
 }
 
@@ -59,19 +65,21 @@ select:-webkit-autofill:focus {
     display: grid;
     /* grid-template-rows: repeat(6, 2rem [col-start]); */
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
-    grid-template-columns: 1fr;
+    grid-template-columns: 25rem;
 }
+
 #fSubmitButton{
     color: white;
     background-color: var(--primary-orange);
 }
+
 @media screen and (max-width: 768px) {
     input{
         width: 100%;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     select,label{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
 }

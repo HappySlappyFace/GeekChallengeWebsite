@@ -144,6 +144,7 @@ header{
   
 /* content */
 .registerButton{
+    margin-top: 1rem;
     text-decoration: none;
     color: white;
     border: none;
@@ -328,6 +329,7 @@ img{display: block;}
 
 .section5{
     display: flex;
+    height: fit-content;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -374,12 +376,30 @@ footer img{
 }
 
 
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     html {
         font-size: 12px; 
-        scroll-padding-top: 88px; 
+        scroll-padding-top: 200px; 
     }
     .section4-header { padding: 1.5rem 2rem; }
     .section4 h1 { font-size: 2.5rem; }
     .section4 p { font-size: 1.25rem; }
+    .section5Planning{flex-direction: column;align-items: flex-start;gap: 0; padding: 1rem;}
+  }
+  @media (max-width: 600px) {
+    html {
+        font-size: 11px; 
+        scroll-padding-top: 200px; 
+    }
+    .section2Text h3{
+        font-size: 1.2rem;
+    }
+    .backgroundImg{
+        height: fit-content;
+    }
+  }
+  @media (max-width: 400px) {
+    .navbar-brand{
+        padding: 0;
+    }
   }
