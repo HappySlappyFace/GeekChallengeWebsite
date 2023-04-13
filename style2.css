@@ -76,10 +76,10 @@ select:-webkit-autofill:focus {
 @media screen and (max-width: 768px) {
     input{
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     select,label{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
 }
