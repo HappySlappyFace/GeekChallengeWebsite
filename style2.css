@@ -67,7 +67,9 @@ select:-webkit-autofill:focus {
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
     grid-template-columns: 25rem;
 }
-
+#registerForm h5{
+    font-weight: 100;
+}
 #fSubmitButton{
     color: white;
     background-color: var(--primary-orange);
