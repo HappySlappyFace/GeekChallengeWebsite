@@ -36,7 +36,9 @@ input{
     font-size: 1.3rem;
     -webkit-appearance: none;
 }
-
+#formDate{
+    height: 1.8rem;
+}
 input::placeholder{
     color: var(--primary-orange);
     font-weight: 100;
