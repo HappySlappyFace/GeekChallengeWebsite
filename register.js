@@ -7,7 +7,9 @@ const fTeamName = form.elements['fTeamName'];
 const fUniName = form.elements['fUniName'];
 const fLevelOfStudy = form.elements['fLevelOfStudy'];
 const fBirthday = form.elements['fBirthday'];
-
+// import * as Bowser from "bowser";
+const browser = (bowser.getParser(window.navigator.userAgent).parsedResult.browser.name).toLowerCase();
+console.log(browser);
 function isValidPhoneNumber(phoneNumber) {
   const phoneNumberRegex = /^(\+216)?[2-9]\d{7}$/;
   return phoneNumberRegex.test(phoneNumber);
@@ -41,8 +43,10 @@ form.addEventListener('submit', function(event) {
   errors.push(isNotNull(fTeamName, 'Team name'));
   errors.push(isNotNull(fUniName, 'University name'));
   errors.push(isNotNull(fLevelOfStudy, 'Level of study'));
-  if (!isOlderThan15Years(fBirthday.value.trim())) {
-    errors.push('You must be at least 15 years old to participate');
+  if(browser!="safari"){
+    if (!isOlderThan15Years(fBirthday.value.trim())) {
+      errors.push('You must be at least 15 years old to participate');
+    }
   }
 
   // Remove null values from errors array
