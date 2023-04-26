@@ -64,7 +64,7 @@ header{
     align-items: flex-start;
 }
 .navbar-brand img{
-    height: 2rem;
+    width: 8rem;
     display: block;
 }
 .navbar-brand{
@@ -386,6 +386,11 @@ footer img{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+.footerBottom a{
+    text-decoration: none;
+    color: var(--primary-grey);
+    font-weight: 700;
 }
 
 
