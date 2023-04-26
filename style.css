@@ -224,7 +224,7 @@ img{display: block;}
 
 .section3Images{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
