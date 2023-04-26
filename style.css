@@ -171,6 +171,9 @@ img{display: block;}
     font-size: 3rem;
     font-weight: 600;
 }
+.titlePadding{
+    padding: 1rem;
+}
 .section1{
 
     display: flex;
@@ -218,6 +221,7 @@ img{display: block;}
     padding: 1rem;
     
 }
+
 .section3Images{
     display: flex;
     justify-content: space-around;
@@ -229,10 +233,20 @@ img{display: block;}
 }
 .section3Img{
     width: 13rem;
+    height: 13rem;
+    object-fit: contain;
     background-color: white;
     border: solid 0.25rem var(--primary-orange);
     border-radius: 1rem;
-    
+}
+.section3ImgSmaller{
+    padding: 1rem;
+}
+.section3ImgLiveSound{
+    background-color: black;
+}
+.section3ImgBeeNext{
+    background-color: #522754;
 }
 .section3ImagesContainer{
     display: flex;
@@ -256,6 +270,7 @@ img{display: block;}
 .section5Container{  
     -webkit-transform: scaleX(-1);
     padding: 1rem;
+    padding-bottom: 2rem;
     transform: scaleX(-1);
     display: flex;
     flex-direction: column;
